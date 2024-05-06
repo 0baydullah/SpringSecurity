@@ -24,4 +24,9 @@ public class HomeController {
     public ResponseEntity<String> publicUser(){
         return ResponseEntity.ok("Accessed by Public User");
     }
+
+    @GetMapping("/login")
+    public String handleLogin(){
+        return "custom_login";
+    }
 }
